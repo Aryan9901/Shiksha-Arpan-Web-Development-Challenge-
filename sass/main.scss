@@ -1,0 +1,36 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Gilroy;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+	font-size: 52.5%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+}
+// importing base folder
+@import "base/base";
+@import "base/typography";
+@import "base/animation";
+@import "base/utilities";
+
+// abstract folder
+@import "abstracts/function";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// components
+@import "components/loader";
+@import "components/navigation";
+@import "components/_buttons";
+// layout
+
+// pages
+@import "pages/home";

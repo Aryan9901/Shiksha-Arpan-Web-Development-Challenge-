@@ -5,10 +5,41 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Shiksha Arpan</title>
-     <link rel="stylesheet" href="style.css">
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+     <div class="loader">
+     </div>
+     <nav class="nav">
+          <div class="nav__logo">
+               <img src="./assets/logo1.png" alt="brand icon" class="nav__img">
+          </div>
+          <button class="nav__search">
+               <p class="nav__txt1">🔍 Search in Courses</p>
+               <div class="nav__search__overlay"></div>
+               <p>Courses &nbsp;&nbsp;<i class="ri-arrow-down-s-line"></i></p>
+          </button>
+          <div class="nav__btn__container">
+               <button class="btn login">
+                    <span class="btn-text-one">Log In</span>
+                    <span class="btn-text-two">Log In Here</span>
+               </button>
+               <button data-label="Register" class="register rainbow-hover">
+                    <span class="sp">Register</span>
+               </button>
+               <label class="hamburger">
+                    <input type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                         <path class="line line-top-bottom"
+                              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                         </path>
+                         <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+               </label>
+          </div>
+     </nav>
 
      <script src="script.js"></script>
 </body>

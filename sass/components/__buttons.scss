@@ -1,0 +1,113 @@
+// login button
+.btn {
+	// width: 140px;
+	// height: 50px;
+	padding: 2.7rem 6.6rem;
+	// margin: 0 2rem;
+	background: linear-gradient(to top right, #8b8f9d, #dc3676, #8b96a5);
+	color: #fff;
+	border-radius: 5rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	& span {
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		transition: top 0.5s;
+	}
+	&-text-one {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+	&-text-two {
+		position: absolute;
+		width: 100%;
+		top: 150%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+	&:hover .btn-text-one {
+		top: -100%;
+	}
+	&:hover .btn-text-two {
+		top: 50%;
+	}
+}
+//  Register button
+.rainbow-hover {
+	font-size: 16px;
+	font-weight: 700;
+	color: #ff7576;
+	background-color: #2b3044;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 12px 24px;
+	position: relative;
+	line-height: 24px;
+	border-radius: 9px;
+	box-shadow: 0px 1px 2px #2b3044, 0px 4px 16px #2b3044;
+	transform-style: preserve-3d;
+	transform: scale(var(--s, 1)) perspective(600px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+	perspective: 600px;
+	transition: transform 0.1s;
+}
+
+.sp {
+	background: linear-gradient(90deg, #866ee7, #ea60da, #ed8f57, #fbd41d, #2cca91);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	display: block;
+}
+
+.rainbow-hover:active {
+	transition: 0.3s;
+	transform: scale(0.93);
+}
+// hamberger menu
+.hamburger {
+	cursor: pointer;
+}
+
+.hamburger input {
+	display: none;
+}
+
+.hamburger svg {
+	/* The size of the SVG defines the overall size */
+	height: 4em;
+	/* Define the transition for transforming the SVG */
+	transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+	fill: none;
+	stroke: #000;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 4;
+	/* Define the transition for transforming the Stroke */
+	transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+	stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+	transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+	stroke-dasharray: 20 300;
+	stroke-dashoffset: -32.42;
+}

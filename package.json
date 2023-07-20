@@ -1,26 +1,27 @@
 {
-  "name": "shiksha-arpan",
-  "version": "1.0.0",
-  "description": "the shiksha arpan platform is an online educational platform that aims to connect student with experts tutors to address their doubts and provide interactive learning experiences",
-  "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-"
-  },
-  "keywords": [
-    "hackathon",
-    "web-development",
-    "js",
-    "gsap",
-    "html",
-    "css3"
-  ],
-  "author": "Aryan Gupta",
-  "license": "MIT",
-  "devDependencies": {
-    "node-sass": "^9.0.0"
-  }
+	"name": "shiksha-arpan",
+	"version": "1.0.0",
+	"description": "the shiksha arpan platform is an online educational platform that aims to connect student with experts tutors to address their doubts and provide interactive learning experiences",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "node-sass --watch ./sass/main.scss ./css/style.css ",
+		"scss": "node-sass --watch scss/main.scss s-o css/style.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-"
+	},
+	"keywords": [
+		"hackathon",
+		"web-development",
+		"js",
+		"gsap",
+		"html",
+		"css3"
+	],
+	"author": "Aryan Gupta",
+	"license": "MIT",
+	"devDependencies": {
+		"node-sass": "^9.0.0"
+	}
 }
