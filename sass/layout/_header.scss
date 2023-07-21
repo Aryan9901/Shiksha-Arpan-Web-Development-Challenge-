@@ -35,12 +35,14 @@
 			font-weight: 600;
 			letter-spacing: 0.2rem;
 			opacity: 0.8;
+			overflow: hidden;
 		}
 		& h1 {
 			font-size: 11rem;
 			-webkit-text-stroke: 0.3rem #000;
 			letter-spacing: 0.5rem;
 			color: transparent;
+			overflow: hidden;
 			& span {
 				&:not(:last-child) {
 					margin-right: 3rem;

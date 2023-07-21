@@ -2,7 +2,7 @@ var tl = gsap.timeline();
 tl.from(".nav", {
 	top: "-100%",
 	duration: 1,
-	delay: 0.1,
+	// delay: 0.1,
 	ease: Expo.easeInOut,
 });
 tl.from(".main__heading p", {
@@ -14,25 +14,33 @@ tl.from(".main__heading p", {
 	ease: Expo.easeInOut,
 })
 	.from(".main__heading h1 span", {
-		y: "-100%",
 		duration: 1,
+		rotate: "-20deg",
+		top: "-100px",
 		opacity: 0,
-		stagger: 0.2,
+		stagger: 0.5,
 		ease: Expo.easeInOut,
 	})
-	.from(".main__text span", {
-		y: "-100%",
-		x: "-50%",
-		duration: 1,
-		opacity: 0,
-		stagger: 0.2,
-		ease: Expo.easeInOut,
-	})
-	.from(".toodle", {
-		y: "-100%",
-		duration: 1,
-		delay: -1,
-		opacity: 0,
-		stagger: 0.2,
-		ease: Expo.easeInOut,
-	});
+	.from(
+		".toodle",
+		{
+			y: "-100%",
+			duration: 1,
+			delay: -1,
+			opacity: 0,
+			stagger: 0.2,
+			ease: Expo.easeInOut,
+		},
+		"hii"
+	)
+	.from(
+		".main__text >span",
+		{
+			y: "-100%",
+			duration: 0.7,
+			opacity: 0.3,
+			stagger: 0.2,
+			ease: Expo.easeInOut,
+		},
+		"hii"
+	);

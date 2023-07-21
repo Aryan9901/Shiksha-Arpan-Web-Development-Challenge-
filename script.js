@@ -38,19 +38,40 @@ const searchBarOpen = () => {
 	const searchBar = document.querySelector(".nav__search");
 	const searchOverlay = document.querySelector(".nav__search__overlay");
 	const bgScreen = document.querySelector(".bg_black");
+	let children = searchOverlay.children;
 	let flag = true;
+
 	searchBar.addEventListener("click", (event) => {
 		if (flag === true) {
 			searchBar.style.backgroundColor = "#383838";
 			searchOverlay.style.height = "600%";
 			bgScreen.style.display = "block";
+			searchOverlay.style.padding = "2rem 4rem";
 			flag = false;
+			for (let i = 0; i < children.length; i++) {
+				children[i].style.display = "block";
+			}
+			children[children.length - 1].style.display = "flex";
 		} else {
 			searchBar.style.backgroundColor = "#e9e9e9";
 			searchOverlay.style.height = "0";
+			searchOverlay.style.padding = "0";
 			bgScreen.style.display = "none";
 			flag = true;
+			for (let i = 0; i < children.length; i++) {
+				children[i].style.display = "none";
+			}
 		}
+	});
+	bgScreen.addEventListener("click", () => {
+		searchBar.style.backgroundColor = "#e9e9e9";
+		searchOverlay.style.height = "0";
+		bgScreen.style.display = "none";
+		flag = true;
+		for (let i = 0; i < children.length; i++) {
+			children[i].style.display = "none";
+		}
+		searchOverlay.style.padding = "0";
 	});
 };
 searchBarOpen();

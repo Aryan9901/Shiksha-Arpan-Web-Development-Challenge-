@@ -44,7 +44,43 @@
 			height: 0;
 			transition: all linear 0.3s;
 			width: 100%;
+			// padding: 2rem 4rem;
 			background-color: #222222;
+			@include flex(flex-start, flex-start, column, 2rem);
+			row-gap: 2rem;
+			color: #fff;
+			& h2 {
+				font-size: 2rem;
+				font-weight: 500;
+				display: none;
+			}
+			& .course__prev {
+				@include flex(center, space-between, row, 2rem);
+				width: 100%;
+				display: none;
+				& img {
+					width: 30%;
+				}
+			}
+			& p {
+				display: none;
+				font-size: 2rem;
+				font-weight: 500;
+			}
+			& .tags {
+				display: none;
+				@include flex(center, flex-start, row, 1.5rem);
+				// background-color: red;
+				padding: 1rem 0;
+				& .tag {
+					font-weight: 400;
+					font-size: 1.8rem;
+					opacity: 0.8;
+					padding: 1rem 2rem;
+					border: 0.2rem solid#fff;
+					border-radius: 2.5rem;
+				}
+			}
 		}
 	}
 	&__txt1 {
