@@ -1,5 +1,9 @@
 window.addEventListener("load", function () {
 	var loader = document.querySelector(".loader");
+	const main = this.document.querySelector(".main");
+	const nav = this.document.querySelector(".nav");
+	main.style.display = "block";
+	nav.style.display = "flex";
 	loader.style.display = "none";
 });
 // above code is for loader off
@@ -33,17 +37,37 @@ registerFunc();
 const searchBarOpen = () => {
 	const searchBar = document.querySelector(".nav__search");
 	const searchOverlay = document.querySelector(".nav__search__overlay");
+	const bgScreen = document.querySelector(".bg_black");
 	let flag = true;
 	searchBar.addEventListener("click", (event) => {
 		if (flag === true) {
 			searchBar.style.backgroundColor = "#383838";
 			searchOverlay.style.height = "600%";
+			bgScreen.style.display = "block";
 			flag = false;
 		} else {
 			searchBar.style.backgroundColor = "#e9e9e9";
 			searchOverlay.style.height = "0";
+			bgScreen.style.display = "none";
 			flag = true;
 		}
 	});
 };
 searchBarOpen();
+
+// clutter text animation
+
+const txtanim = () => {
+	let clutter = "";
+	document
+		.querySelector(".main__text")
+		.textContent.split(" ")
+		.forEach((dets) => {
+			if (dets.trim() === "") {
+			} else {
+				clutter += `<span>${dets.trim()}</span> `;
+			}
+		});
+	document.querySelector(".main__text").innerHTML = clutter.trim();
+};
+txtanim();

@@ -4,6 +4,11 @@
   box-sizing: border-box;
   font-family: Gilroy; }
 
+*::selection {
+  background-color: #75c7fb;
+  color: #fe4c59;
+  font-weight: 600; }
+
 html {
   height: 100%;
   width: 100%;
@@ -17,6 +22,8 @@ body {
   width: 48px;
   height: 48px;
   margin: auto;
+  top: 50%;
+  transform: translate(-50%, -50%);
   position: relative; }
 
 .loader:before {
@@ -67,12 +74,13 @@ body {
   justify-content: space-between;
   flex-direction: row;
   gap: 4rem;
+  display: none;
   padding: 1rem 3rem;
   background-size: cover;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999999;
+  z-index: 999999999;
   width: 100%; }
   .nav__img {
     width: 7rem; }
@@ -126,14 +134,14 @@ body {
 
 .btn {
   padding: 2.7rem 6.6rem;
-  background: linear-gradient(to top right, #8b8f9d, #dc3676, #8b96a5);
+  margin: 0 2rem;
+  background: #ff3847;
   color: #fff;
   border-radius: 5rem;
   border: none;
   outline: none;
   cursor: pointer;
   position: relative;
-  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5);
   overflow: hidden; }
   .btn span {
     font-size: 1.2rem;
@@ -217,3 +225,66 @@ body {
 .hamburger input:checked + svg .line-top-bottom {
   stroke-dasharray: 20 300;
   stroke-dashoffset: -32.42; }
+
+.main {
+  min-height: 100%;
+  width: 100%;
+  padding: 5rem 9rem;
+  display: none;
+  padding-top: 11rem;
+  position: relative; }
+  .main header .toodle {
+    padding: 4rem 2rem;
+    background-color: #fff9d0;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    text-align: center;
+    width: 20%;
+    border-radius: 2rem; }
+    .main header .toodle p {
+      font-size: 2.5rem;
+      display: inline-block; }
+  .main__hero {
+    padding-top: 14rem;
+    padding-left: 3rem;
+    padding-bottom: 4rem;
+    width: 100%; }
+  .main__heading {
+    text-align: left;
+    padding-bottom: 6rem; }
+    .main__heading p {
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: 0.2rem;
+      opacity: 0.8; }
+    .main__heading h1 {
+      font-size: 11rem;
+      -webkit-text-stroke: 0.3rem #000;
+      letter-spacing: 0.5rem;
+      color: transparent; }
+      .main__heading h1 span:not(:last-child) {
+        margin-right: 3rem; }
+  .main__text {
+    font-size: 3.3rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    width: 72%;
+    margin-top: 6rem; }
+
+.courses {
+  height: 400vh;
+  width: 100%;
+  background-color: red; }
+
+.bg_black {
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0.5;
+  transition: all linear 0.3s; }

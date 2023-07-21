@@ -1,0 +1,59 @@
+.main {
+	min-height: 100%;
+	width: 100%;
+	padding: 5rem 9rem;
+	display: none;
+	padding-top: 11rem;
+	position: relative;
+	& header .toodle {
+		padding: 4rem 2rem;
+		background-color: #fff9d0;
+		position: absolute;
+		top: 5%;
+		right: 10%;
+		text-align: center;
+		width: 20%;
+		border-radius: 2rem;
+		& p {
+			font-size: 2.5rem;
+			display: inline-block;
+		}
+	}
+	&__hero {
+		padding-top: 14rem;
+		padding-left: 3rem;
+		padding-bottom: 4rem;
+		width: 100%;
+		// background-color: blue;
+	}
+	&__heading {
+		// background-color: aqua;
+		text-align: left;
+		padding-bottom: 6rem;
+		& p {
+			font-size: 2.5rem;
+			font-weight: 600;
+			letter-spacing: 0.2rem;
+			opacity: 0.8;
+		}
+		& h1 {
+			font-size: 11rem;
+			-webkit-text-stroke: 0.3rem #000;
+			letter-spacing: 0.5rem;
+			color: transparent;
+			& span {
+				&:not(:last-child) {
+					margin-right: 3rem;
+				}
+			}
+		}
+	}
+	&__text {
+		font-size: 3.3rem;
+		font-weight: 600;
+		letter-spacing: 0.2rem;
+		width: 72%;
+		// opacity: 0.3;
+		margin-top: 6rem;
+	}
+}

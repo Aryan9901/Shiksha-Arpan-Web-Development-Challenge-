@@ -1,11 +1,12 @@
 .nav {
 	@include flex(center, space-between, row, 4rem);
+	display: none;
 	padding: 1rem 3rem;
 	background-size: cover;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 999999;
+	z-index: 999999999;
 	width: 100%;
 	&__img {
 		width: 7rem;
