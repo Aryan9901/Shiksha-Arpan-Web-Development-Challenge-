@@ -39,6 +39,7 @@ const searchBarOpen = () => {
 	const searchOverlay = document.querySelector(".nav__search__overlay");
 	const bgScreen = document.querySelector(".bg_black");
 	let children = searchOverlay.children;
+	let tag = document.querySelector(".tag");
 	let flag = true;
 
 	searchBar.addEventListener("click", (event) => {
@@ -46,6 +47,7 @@ const searchBarOpen = () => {
 			searchBar.style.backgroundColor = "#383838";
 			searchOverlay.style.height = "600%";
 			bgScreen.style.display = "block";
+			tag.style.display = "block";
 			searchOverlay.style.padding = "2rem 4rem";
 			flag = false;
 			for (let i = 0; i < children.length; i++) {
@@ -57,6 +59,7 @@ const searchBarOpen = () => {
 			searchOverlay.style.height = "0";
 			searchOverlay.style.padding = "0";
 			bgScreen.style.display = "none";
+			tag.style.display = "none";
 			flag = true;
 			for (let i = 0; i < children.length; i++) {
 				children[i].style.display = "none";
@@ -67,6 +70,7 @@ const searchBarOpen = () => {
 		searchBar.style.backgroundColor = "#e9e9e9";
 		searchOverlay.style.height = "0";
 		bgScreen.style.display = "none";
+		tag.style.display = "none";
 		flag = true;
 		for (let i = 0; i < children.length; i++) {
 			children[i].style.display = "none";
@@ -92,3 +96,20 @@ const txtanim = () => {
 	document.querySelector(".main__text").innerHTML = clutter.trim();
 };
 txtanim();
+// register functionality
+
+const registerFun = () => {
+	const overlayScreen = document.querySelector(".reg_screen");
+	const registerBtn = document.querySelector(".register");
+	registerBtn.addEventListener("click", () => {
+		overlayScreen.style.display = "block";
+	});
+	overlayScreen.addEventListener("click", () => {
+		overlayScreen.style.display = "none";
+	});
+	document.querySelector(".form").addEventListener("submit", (e) => {
+		e.preventDefault();
+		localStorage.setItem("visitedBefore", true);
+	});
+};
+registerFun();

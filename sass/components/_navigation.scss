@@ -55,11 +55,13 @@
 				display: none;
 			}
 			& .course__prev {
-				@include flex(center, space-between, row, 2rem);
+				@include flex(center, space-between, row, 4rem);
 				width: 100%;
 				display: none;
 				& img {
-					width: 30%;
+					margin: 0 1rem;
+					width: 25%;
+					aspect-ratio: 3/1/2;
 				}
 			}
 			& p {
@@ -73,6 +75,7 @@
 				// background-color: red;
 				padding: 1rem 0;
 				& .tag {
+					display: none;
 					font-weight: 400;
 					font-size: 1.8rem;
 					opacity: 0.8;
