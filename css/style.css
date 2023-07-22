@@ -394,7 +394,7 @@ body {
   position: relative; }
   .main header .toodle {
     padding: 4rem 2rem;
-    background-color: #fff9d0;
+    background-color: #c8e8fc;
     position: absolute;
     top: 5%;
     right: 10%;
@@ -420,7 +420,7 @@ body {
       overflow: hidden; }
     .main__heading h1 {
       font-size: 11rem;
-      -webkit-text-stroke: 0.3rem #000;
+      -webkit-text-stroke: 0.3rem #ff3847;
       letter-spacing: 0.5rem;
       color: transparent;
       overflow: hidden; }
@@ -436,7 +436,23 @@ body {
 .courses {
   height: 400vh;
   width: 100%;
-  background-color: red; }
+  padding-top: 4rem; }
+  .courses__text {
+    margin: 3rem;
+    font-size: 7rem;
+    font-weight: 200;
+    line-height: 1; }
+    .courses__text span {
+      color: transparent;
+      -webkit-text-stroke: 0.2rem #ff3847;
+      display: block; }
+  .courses .course__details {
+    background-color: blue;
+    width: 50%;
+    height: 100%;
+    display: inline-block; }
+  .courses .course__img {
+    background-color: aqua; }
 
 .bg_black {
   height: 100vh;

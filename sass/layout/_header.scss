@@ -7,7 +7,8 @@
 	position: relative;
 	& header .toodle {
 		padding: 4rem 2rem;
-		background-color: #fff9d0;
+		// background-color: #fff9d0;
+		background-color: #c8e8fc;
 		position: absolute;
 		top: 5%;
 		right: 10%;
@@ -39,7 +40,7 @@
 		}
 		& h1 {
 			font-size: 11rem;
-			-webkit-text-stroke: 0.3rem #000;
+			-webkit-text-stroke: 0.3rem #ff3847;
 			letter-spacing: 0.5rem;
 			color: transparent;
 			overflow: hidden;

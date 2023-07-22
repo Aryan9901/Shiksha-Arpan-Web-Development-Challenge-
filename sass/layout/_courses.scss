@@ -1,5 +1,26 @@
 .courses {
 	height: 400vh;
 	width: 100%;
-	background-color: red;
+	// background-color: red;
+	padding-top: 4rem;
+	&__text {
+		margin: 3rem;
+		font-size: 7rem;
+		font-weight: 200;
+		line-height: 1;
+		& span {
+			color: transparent;
+			-webkit-text-stroke: 0.2rem #ff3847;
+			display: block;
+		}
+	}
+	.course__details {
+		background-color: blue;
+		width: 50%;
+		height: 100%;
+		display: inline-block;
+	}
+	.course__img {
+		background-color: aqua;
+	}
 }

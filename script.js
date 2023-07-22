@@ -104,12 +104,17 @@ const registerFun = () => {
 	registerBtn.addEventListener("click", () => {
 		overlayScreen.style.display = "block";
 	});
-	overlayScreen.addEventListener("click", () => {
-		overlayScreen.style.display = "none";
+	overlayScreen.addEventListener("click", (dets) => {
+		let target = dets.target;
+		console.log(target.id);
+		if (target.id !== "not") {
+			overlayScreen.style.display = "none";
+		}
 	});
-	document.querySelector(".form").addEventListener("submit", (e) => {
-		e.preventDefault();
+	document.querySelector(".submit").addEventListener("click", (e) => {
+		// e.preventDefault();
 		localStorage.setItem("visitedBefore", true);
+		overlayScreen.style.display = "none";
 	});
 };
 registerFun();
