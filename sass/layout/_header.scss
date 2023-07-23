@@ -33,12 +33,13 @@
 		padding-bottom: 6rem;
 		& p {
 			font-size: 2.5rem;
-			font-weight: 600;
+			font-weight: 400;
 			letter-spacing: 0.2rem;
 			opacity: 0.8;
 			overflow: hidden;
 		}
 		& h1 {
+			font-weight: 900;
 			font-size: 11rem;
 			-webkit-text-stroke: 0.3rem #ff3847;
 			letter-spacing: 0.5rem;
@@ -52,11 +53,12 @@
 		}
 	}
 	&__text {
-		font-size: 3.3rem;
-		font-weight: 600;
+		font-size: 2.5rem;
+		font-weight: 400;
 		letter-spacing: 0.2rem;
 		width: 72%;
 		// opacity: 0.3;
-		margin-top: 6rem;
+		margin-top: 2rem;
+		color: #75c7fb;
 	}
 }

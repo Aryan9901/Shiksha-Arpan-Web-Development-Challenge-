@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Nunito:ital,wght@0,200;0,300;0,400;1,200&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-  font-family: Gilroy; }
+  box-sizing: border-box; }
+
+* p {
+  font-family: "Nunito", sans-serif; }
+
+* h1,
+* h2,
+* h3,
+* h4,
+* h5 {
+  font-family: "Roboto Condensed", sans-serif; }
 
 *::selection {
   background-color: #75c7fb;
@@ -385,6 +395,68 @@ body {
     transform: scale(1.8);
     opacity: 0; } }
 
+.menu {
+  user-select: none;
+  position: fixed;
+  bottom: 8%;
+  left: 50%;
+  translate: -50% 0%;
+  height: 14vh;
+  max-width: 60%;
+  background-color: #222222d7;
+  padding: 0.6rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; }
+  .menu .section1 {
+    background-color: #000;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 2rem;
+    color: #fff; }
+    .menu .section1 p {
+      font-size: 2rem; }
+      .menu .section1 p span {
+        color: #aaeec4;
+        font-weight: 500; }
+    .menu .section1 i {
+      font-size: 2rem;
+      cursor: pointer; }
+  .menu .categories {
+    font-size: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fcfcfe;
+    margin-left: 1rem;
+    user-select: none; }
+    .menu .categories i {
+      font-size: 3rem;
+      margin-left: 0.6rem;
+      cursor: pointer; }
+  .menu .forums {
+    font-size: 2.3rem;
+    color: #fcfcfe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem; }
+    .menu .forums i {
+      color: #cceafd;
+      font-size: 3rem;
+      cursor: pointer; }
+  .menu #chatbot {
+    font-size: 4rem;
+    color: #ff3847;
+    margin: 0 1rem;
+    margin-right: 0;
+    cursor: pointer; }
+
 .main {
   min-height: 100%;
   width: 100%;
@@ -414,11 +486,12 @@ body {
     padding-bottom: 6rem; }
     .main__heading p {
       font-size: 2.5rem;
-      font-weight: 600;
+      font-weight: 400;
       letter-spacing: 0.2rem;
       opacity: 0.8;
       overflow: hidden; }
     .main__heading h1 {
+      font-weight: 900;
       font-size: 11rem;
       -webkit-text-stroke: 0.3rem #ff3847;
       letter-spacing: 0.5rem;
@@ -427,14 +500,15 @@ body {
       .main__heading h1 span:not(:last-child) {
         margin-right: 3rem; }
   .main__text {
-    font-size: 3.3rem;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 400;
     letter-spacing: 0.2rem;
     width: 72%;
-    margin-top: 6rem; }
+    margin-top: 2rem;
+    color: #75c7fb; }
 
 .courses {
-  height: 400vh;
+  min-height: 130vh;
   width: 100%;
   padding-top: 4rem; }
   .courses__text {
@@ -443,16 +517,66 @@ body {
     font-weight: 200;
     line-height: 1; }
     .courses__text span {
+      font-weight: 400;
       color: transparent;
       -webkit-text-stroke: 0.2rem #ff3847;
-      display: block; }
-  .courses .course__details {
-    background-color: blue;
-    width: 50%;
+      display: block;
+      color: #75c7fb; }
+  .courses__container {
+    display: flex;
+    height: 400vh;
+    width: 100%;
+    padding: 2rem;
+    justify-content: center;
+    gap: 1rem; }
+  .courses__left {
     height: 100%;
-    display: inline-block; }
-  .courses .course__img {
-    background-color: aqua; }
+    width: 50%; }
+  .courses__right {
+    height: 100%;
+    width: 50%;
+    position: relative; }
+  .courses__details {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    gap: 9rem;
+    border-block-start: 0.3rem solid #ff919191; }
+    .courses__details h3 {
+      font-weight: 400;
+      font-size: 2.5rem; }
+    .courses__details h2 {
+      font-size: 4.9rem;
+      font-weight: 500;
+      width: 72%;
+      margin-left: 4.2rem;
+      scale: 1.2;
+      line-height: 1; }
+    .courses__details p {
+      font-size: 2.3rem;
+      font-weight: 400; }
+      .courses__details p span {
+        margin-right: 1rem; }
+  .courses__img {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .courses__img__container {
+      height: 70%;
+      width: 85%;
+      object-fit: cover;
+      object-position: center;
+      aspect-ratio: 1/2;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .courses__img__container img {
+        width: 100%; }
 
 .bg_black {
   height: 100vh;

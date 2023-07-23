@@ -1,5 +1,5 @@
 .courses {
-	height: 400vh;
+	min-height: 130vh;
 	width: 100%;
 	// background-color: red;
 	padding-top: 4rem;
@@ -9,18 +9,80 @@
 		font-weight: 200;
 		line-height: 1;
 		& span {
+			font-weight: 400;
 			color: transparent;
 			-webkit-text-stroke: 0.2rem #ff3847;
 			display: block;
+			color: #75c7fb;
 		}
 	}
-	.course__details {
-		background-color: blue;
-		width: 50%;
-		height: 100%;
-		display: inline-block;
+	&__container {
+		// background-color: blue;
+		display: flex;
+		height: 400vh;
+		width: 100%;
+		padding: 2rem;
+		justify-content: center;
+		gap: 1rem;
 	}
-	.course__img {
-		background-color: aqua;
+	&__left {
+		height: 100%;
+		width: 50%;
+		// background-color: yellow;
+	}
+	&__right {
+		height: 100%;
+		width: 50%;
+		position: relative;
+		// background-color: yellow;
+	}
+	&__details {
+		// padding-left: 12rem;
+		height: 100vh;
+		width: 100%;
+		// background-color: blue;
+		@include flex(left, center, column, 9rem);
+		border-block-start: 0.3rem solid #ff919191;
+		h3 {
+			font-weight: 400;
+			font-size: 2.5rem;
+		}
+		h2 {
+			font-size: 4.9rem;
+			font-weight: 500;
+			width: 72%;
+			margin-left: 4.2rem;
+			scale: 1.2;
+			line-height: 1;
+			// background-color: red;
+		}
+		p {
+			font-size: 2.3rem;
+			font-weight: 400;
+			span {
+				margin-right: 1rem;
+			}
+		}
+	}
+	&__img {
+		height: 100vh;
+		width: 100%;
+		// background-color: purple;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&__container {
+			height: 70%;
+			width: 85%;
+			object-fit: cover;
+			object-position: center;
+			aspect-ratio: 1/2;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				width: 100%;
+			}
+		}
 	}
 }
