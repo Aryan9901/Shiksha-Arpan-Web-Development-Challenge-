@@ -1077,6 +1077,7 @@ body {
 .footer {
   height: 100vh;
   width: 100vw;
+  display: none;
   background-color: black;
   padding-top: 1rem; }
   .footer > h2 {

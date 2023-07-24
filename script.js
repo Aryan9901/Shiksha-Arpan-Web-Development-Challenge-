@@ -1,8 +1,10 @@
 window.addEventListener("load", function () {
 	var loader = document.querySelector(".loader");
 	const main = this.document.querySelector(".main");
+	const footer = document.querySelector(".footer");
 	const nav = this.document.querySelector(".nav");
 	main.style.display = "block";
+	footer.style.display = "block";
 	nav.style.display = "flex";
 	loader.style.display = "none";
 });
