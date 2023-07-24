@@ -29,6 +29,7 @@ html {
 body {
 	height: 100%;
 	width: 100%;
+	overflow-x: hidden;
 }
 
 // font
@@ -52,9 +53,17 @@ body {
 @import "components/_buttons";
 @import "components/register";
 @import "components/menu";
+@import "components/chatbot";
+@import "components/card1";
+@import "components/swiper";
+@import "components/quotes";
 // layout
 @import "layout/header";
 @import "layout/courses";
 @import "layout/background";
+@import "layout/marqueCards";
+@import "layout/courseList";
+@import "layout/testinomial";
+@import "layout/footer";
 // pages
 @import "pages/home";

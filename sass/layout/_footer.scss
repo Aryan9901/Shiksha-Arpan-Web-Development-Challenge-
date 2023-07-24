@@ -1,0 +1,119 @@
+.footer {
+	height: 100vh;
+	width: 100vw;
+	background-color: black;
+	padding-top: 1rem;
+	& > h2 {
+		font-size: 4.6rem;
+		text-align: center;
+		color: #fff;
+		margin-top: 5rem;
+		font-weight: 600;
+	}
+	& > p {
+		margin-top: 2rem;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 600;
+		color: #fff;
+	}
+	.socials {
+		margin-top: 3rem;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 3rem;
+		padding: 2rem 0;
+		i {
+			padding: 1rem;
+			font-size: 3rem;
+			color: #fff;
+			transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+			border-radius: 50%;
+			border: 0.3rem solid #c8e8fc;
+			&:hover {
+				background-color: #c8e8fc;
+				color: #ff1c24;
+			}
+		}
+	}
+	.bottom {
+		width: 100%;
+		// height: 40%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		// background-color: red;
+		.subscribe {
+			margin-top: 8rem;
+			display: flex;
+			flex-direction: column;
+			background: #606c88;
+			background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
+			background: linear-gradient(to right, #3f4c6b, #606c88);
+			padding: 20px;
+			border-radius: 10px;
+			max-width: 29%;
+		}
+
+		.title {
+			font-size: 3rem;
+			line-height: 1;
+			font-weight: 700;
+			letter-spacing: 0.1rem;
+			color: #fff;
+			margin-bottom: 1rem;
+		}
+
+		.description {
+			line-height: 1.5;
+			font-size: 1.9rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			color: #fcfcfe;
+		}
+
+		.subscribe div {
+			display: flex;
+			width: 100%;
+			margin-top: 1.5rem;
+			column-gap: 0.6rem;
+		}
+
+		.subscribe div input {
+			outline: none;
+			line-height: 1.5;
+			font-size: 1.5rem;
+			color: #fcfcfe;
+			padding: 1rem 1.5rem;
+			background-color: #606c88;
+			border: 1px solid rgba(253, 253, 253, 0.363);
+			border-radius: 0.8rem;
+			flex: 1 1 auto;
+			caret-color: #8ed1fc;
+		}
+
+		.subscribe div input::placeholder {
+			color: rgb(216, 212, 212);
+		}
+
+		.subscribe div input:focus {
+			border: 1px solid rgb(144, 121, 236);
+			opacity: 1;
+		}
+
+		.subscribe div button {
+			color: #121;
+			font-weight: 600;
+			font-size: 1.5rem;
+			line-height: 1.25;
+			padding: 1rem 1.5rem;
+			background-color: #8ed1fc;
+			border-radius: 0.8rem;
+			border: none;
+			outline: none;
+		}
+	}
+}

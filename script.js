@@ -118,3 +118,17 @@ const registerFun = () => {
 	});
 };
 registerFun();
+
+const chatbot = () => {
+	const chatIcon = document.querySelector("#chatbot");
+	const chatContainer = document.querySelector("#chatbotcnt");
+	const close = document.querySelector(".close");
+	let bool = true;
+	chatIcon.addEventListener("click", (event) => {
+		chatContainer.style.display = "block";
+	});
+	close.addEventListener("click", () => {
+		chatContainer.style.display = "none";
+	});
+};
+chatbot();

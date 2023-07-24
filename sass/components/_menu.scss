@@ -1,5 +1,6 @@
 .menu {
 	user-select: none;
+	z-index: 9999999999999;
 	position: fixed;
 	bottom: 8%;
 	left: 50%;
@@ -31,7 +32,7 @@
 		}
 		i {
 			font-size: 2rem;
-			cursor: pointer;
+			cursor: s;
 		}
 	}
 	.categories {

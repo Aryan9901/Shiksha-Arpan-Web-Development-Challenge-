@@ -1,0 +1,13 @@
+.marquecards {
+	display: flex;
+	align-items: center;
+	gap: 5rem;
+	// width: 100%;
+	// background-color: red;
+	overflow-y: hidden;
+	overflow-x: auto;
+	padding: 2rem;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}

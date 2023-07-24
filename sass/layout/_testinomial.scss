@@ -1,0 +1,28 @@
+.testinomial {
+	// height: 100vh;
+	width: 100%;
+	// background-color: red;
+	padding: 1rem;
+	margin-top: 8rem;
+	& > h1 {
+		font-size: 7rem;
+		font-weight: 600;
+		color: #000000;
+		// margin-top: 8rem;
+		margin: 1rem;
+	}
+	.swiper__cnt {
+		margin-top: 4rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		// gap: 4rem;
+		height: 50vh;
+		width: 100%;
+		// background-color: red;
+		overflow-y: hidden;
+		overflow-x: auto;
+		position: relative;
+		padding: 1rem 0.2rem;
+	}
+}

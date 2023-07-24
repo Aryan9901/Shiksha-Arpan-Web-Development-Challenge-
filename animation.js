@@ -98,8 +98,8 @@ var g = gsap.timeline({
 	scrollTrigger: {
 		trigger: ".courses__container",
 		scroller: "body",
-		start: "top -120%",
-		end: "top -400%",
+		start: "top -110%",
+		end: "top -680%",
 		// scrollerStart: "top center",
 		// markers: true,
 		scrub: 2,
@@ -123,5 +123,15 @@ g.to("body", {
 	.to("body", {
 		duration: 2,
 		backgroundColor: "#c8e8fc",
+		ease: Expo.power2,
+	})
+	.to("body", {
+		duration: 6,
+		backgroundColor: "#666",
+		ease: Expo.power2,
+	})
+	.to("body", {
+		duration: 2,
+		backgroundColor: "#fff",
 		ease: Expo.power2,
 	});
