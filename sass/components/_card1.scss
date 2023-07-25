@@ -15,7 +15,7 @@
 			min-width: 350px;
 		}
 		@include respond(phone) {
-			min-width: 322px;
+			min-width: 280px;
 		}
 		@include respond(small-phone) {
 			min-width: 200px;

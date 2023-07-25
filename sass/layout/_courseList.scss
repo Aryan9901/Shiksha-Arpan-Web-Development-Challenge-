@@ -5,6 +5,21 @@
 		padding-bottom: 1rem;
 		border-bottom: 0.2rem solid #b9adb9;
 		margin-bottom: 2rem;
+		@include respond(tab-land) {
+			margin-top: 6rem;
+			font-size: 9rem;
+		}
+		@include respond(tab-port) {
+			margin-top: 5rem;
+			font-size: 12rem;
+		}
+		@include respond(phone) {
+			font-size: 12rem;
+		}
+		@include respond(small-phone) {
+			font-size: 14rem;
+			margin-top: 5rem;
+		}
 	}
 	margin-top: 3rem;
 	min-height: 100vh;
@@ -17,42 +32,70 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
-		gap: 2rem;
+		flex-wrap: wrap;
+		gap: 3rem;
 		color: #fefefc;
 		p {
 			background-color: #888;
 			cursor: pointer;
-			padding: 1rem;
+			padding: 1rem 1.5rem;
 			position: relative;
 			color: #fff;
-			font-size: 1.6rem;
-			&:hover::after {
+			font-size: 1.7rem;
+			@include respond(tab-land) {
+				font-size: 1.9rem;
+			}
+			@include respond(tab-port) {
+				font-size: 2.2rem;
+			}
+			@include respond(phone) {
+				font-size: 2.5rem;
+			}
+			@include respond(small-phone) {
+				font-size: 3rem;
+			}
+			&:hover {
+				background-color: #fff;
+				color: #000;
+				font-weight: 800;
+				// font-size: rem;
+			}
+			&::after {
 				content: "";
 				position: absolute;
 				height: 100%;
 				width: 100%;
 				// background-color: red;
 				background: linear-gradient(-45deg, #75c7fb 0%, #ff3847 100%);
+				top: 0;
+				left: 0;
+				z-index: -1;
+				transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+			}
+			&:hover::after {
+				background: linear-gradient(-45deg, #75c7fb 0%, #ff3847 100%);
 				top: 7%;
-				left: 2%;
+				left: 3%;
 				z-index: -1;
 			}
 		}
 		.active {
 			background-color: #fff;
 			color: #000;
-			font-weight: 600;
+			font-weight: 700;
+			// font-size: 2rem;
 		}
 	}
 	.course {
+		padding: 3rem 0;
 		.FlexContainer {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: flex-start;
+			justify-content: center;
 			align-items: center;
 			width: 100%;
 			// background-color: #2f1d58;
-			min-height: 80vh;
+			// min-height: 80vh;
 			// overflow: auto;
 			flex-direction: row;
 			margin-top: 3rem;
@@ -61,13 +104,29 @@
 		.FlexContainer div {
 			// margin-top: 3rem;
 			width: 23%;
-			min-width: 20%;
-			height: 400px;
+			min-width: 150px;
+			min-height: 100px;
 			padding: 0;
-			margin: 7px;
+			padding-bottom: 4rem;
+			// margin: 7px;
+			margin: 0.7rem;
 			position: relative;
 			transition: all linear 0.4s;
 			// background-color: #fcfcfe;
+			@include respond(tab-land) {
+				width: 26%;
+				margin: 4rem;
+			}
+			@include respond(tab-port) {
+				width: 27%;
+				margin: 2rem;
+			}
+			@include respond(phone) {
+				width: 80%;
+			}
+			@include respond(small-phone) {
+				width: 79%;
+			}
 			&:hover::after {
 				content: "";
 				position: absolute;
@@ -80,13 +139,26 @@
 				rotate: 1deg;
 			}
 			.img {
-				height: 45%;
+				height: 65%;
 				width: 100%;
 				margin: 0;
 				background-size: cover;
 				background-position: top;
 				// background-image: url(../../assets/webdev.avif);
 				transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+				@include respond(tab-land) {
+					height: 45%;
+				}
+				@include respond(tab-port) {
+					height: 50%;
+				}
+				@include respond(phone) {
+					background-position: center;
+					height: 200px;
+				}
+				@include respond(small-phone) {
+					height: 85%;
+				}
 				&:hover {
 				}
 			}
@@ -110,6 +182,18 @@
 					font-size: 1.4rem;
 					font-weight: 400;
 					margin: 0;
+					@include respond(tab-port) {
+						font-size: 1.8rem;
+						margin: 2rem 0rem;
+					}
+					@include respond(phone) {
+						font-size: 2.5rem;
+						margin: 3rem 0;
+					}
+					@include respond(small-phone) {
+						font-size: 3rem;
+						margin: 3rem 0;
+					}
 				}
 				h2 {
 					font-size: 2.6rem;
@@ -117,19 +201,71 @@
 					font-weight: 600;
 					margin: 0;
 					width: 100%;
+					@include respond(tab-land) {
+						font-size: 2.6rem;
+					}
+					@include respond(tab-port) {
+						font-size: 3rem;
+						width: 100%;
+					}
+					@include respond(phone) {
+						font-size: 4.6rem;
+						width: 70%;
+					}
+					@include respond(small-phone) {
+						font-size: 5rem;
+						width: 65%;
+					}
 				}
 				.rating {
+					display: flex;
+					align-items: center;
+					gap: 2rem;
 					width: 100%;
 					font-size: 1.8rem;
+					@include respond(tab-port) {
+						font-size: 2rem;
+					}
+					@include respond(phone) {
+						font-size: 2.9rem;
+					}
+					@include respond(small-phone) {
+						font-size: 3.4rem;
+					}
 					span {
 						color: #84ccfa;
 						letter-spacing: 0.1rem;
+						@include respond(tab-port) {
+							font-size: 2.3rem;
+						}
+						@include respond(phone) {
+							font-size: 3rem;
+						}
+						@include respond(small-phone) {
+							font-size: 3.6rem;
+						}
 					}
 				}
 				p {
 					color: #000;
-					font-size: 1.2rem;
-					font-weight: 600;
+					font-size: 1.5rem;
+					font-weight: 400;
+					@include respond(tab-land) {
+						font-size: 1.8rem;
+					}
+					@include respond(tab-port) {
+						font-size: 2.4rem;
+						font-weight: 400;
+						margin: 1rem;
+					}
+					@include respond(phone) {
+						font-size: 3rem;
+						margin: 1rem 0;
+					}
+					@include respond(small-phone) {
+						font-size: 3.5rem;
+						margin: 1rem;
+					}
 				}
 			}
 		}

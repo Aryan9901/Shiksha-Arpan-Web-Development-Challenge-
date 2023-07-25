@@ -711,7 +711,7 @@ body {
       min-width: 350px; } }
   @media (max-width: 600px) {
     .marquecards .card1 {
-      min-width: 322px; } }
+      min-width: 280px; } }
   @media (max-width: 350px) {
     .marquecards .card1 {
       min-width: 200px; } }
@@ -1184,103 +1184,234 @@ body {
     padding-bottom: 1rem;
     border-bottom: 0.2rem solid #b9adb9;
     margin-bottom: 2rem; }
+    @media (max-width: 1200px) {
+      #courses .heading {
+        margin-top: 6rem;
+        font-size: 9rem; } }
+    @media (max-width: 900px) {
+      #courses .heading {
+        margin-top: 5rem;
+        font-size: 12rem; } }
+    @media (max-width: 600px) {
+      #courses .heading {
+        font-size: 12rem; } }
+    @media (max-width: 350px) {
+      #courses .heading {
+        font-size: 14rem;
+        margin-top: 5rem; } }
   #courses .category {
     padding: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 3rem;
     color: #fefefc; }
     #courses .category p {
       background-color: #888;
       cursor: pointer;
-      padding: 1rem;
+      padding: 1rem 1.5rem;
       position: relative;
       color: #fff;
-      font-size: 1.6rem; }
-      #courses .category p:hover::after {
+      font-size: 1.7rem; }
+      @media (max-width: 1200px) {
+        #courses .category p {
+          font-size: 1.9rem; } }
+      @media (max-width: 900px) {
+        #courses .category p {
+          font-size: 2.2rem; } }
+      @media (max-width: 600px) {
+        #courses .category p {
+          font-size: 2.5rem; } }
+      @media (max-width: 350px) {
+        #courses .category p {
+          font-size: 3rem; } }
+      #courses .category p:hover {
+        background-color: #fff;
+        color: #000;
+        font-weight: 800; }
+      #courses .category p::after {
         content: "";
         position: absolute;
         height: 100%;
         width: 100%;
         background: linear-gradient(-45deg, #75c7fb 0%, #ff3847 100%);
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s; }
+      #courses .category p:hover::after {
+        background: linear-gradient(-45deg, #75c7fb 0%, #ff3847 100%);
         top: 7%;
-        left: 2%;
+        left: 3%;
         z-index: -1; }
     #courses .category .active {
       background-color: #fff;
       color: #000;
-      font-weight: 600; }
-  #courses .course .FlexContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    min-height: 80vh;
-    flex-direction: row;
-    margin-top: 3rem; }
-  #courses .course .FlexContainer div {
-    width: 23%;
-    min-width: 20%;
-    height: 400px;
-    padding: 0;
-    margin: 7px;
-    position: relative;
-    transition: all linear 0.4s; }
-    #courses .course .FlexContainer div:hover::after {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 102%;
-      background: linear-gradient(-45deg, #75c7fb 0%, #ff3847 100%);
-      top: 0;
-      left: -1%;
-      z-index: -1;
-      rotate: 1deg; }
-    #courses .course .FlexContainer div .img {
-      height: 45%;
-      width: 100%;
-      margin: 0;
-      background-size: cover;
-      background-position: top;
-      transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.2s; }
-    #courses .course .FlexContainer div .detail {
-      width: 100%;
-      height: 55%;
-      margin: 0;
+      font-weight: 700; }
+  #courses .course {
+    padding: 3rem 0; }
+    #courses .course .FlexContainer {
       display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: column;
-      row-gap: 1rem;
-      padding-left: 2rem;
-      padding-top: 1rem; }
-      #courses .course .FlexContainer div .detail h4 {
-        border-radius: 2rem;
-        padding: 1rem 2.3rem;
-        width: fit-content;
-        background-color: #000;
-        color: #fcfcfe;
-        font-size: 1.4rem;
-        font-weight: 400;
-        margin: 0; }
-      #courses .course .FlexContainer div .detail h2 {
-        font-size: 2.6rem;
-        color: #121;
-        font-weight: 600;
-        margin: 0;
-        width: 100%; }
-      #courses .course .FlexContainer div .detail .rating {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-direction: row;
+      margin-top: 3rem; }
+    #courses .course .FlexContainer div {
+      width: 23%;
+      min-width: 150px;
+      min-height: 100px;
+      padding: 0;
+      padding-bottom: 4rem;
+      margin: 0.7rem;
+      position: relative;
+      transition: all linear 0.4s; }
+      @media (max-width: 1200px) {
+        #courses .course .FlexContainer div {
+          width: 26%;
+          margin: 4rem; } }
+      @media (max-width: 900px) {
+        #courses .course .FlexContainer div {
+          width: 27%;
+          margin: 2rem; } }
+      @media (max-width: 600px) {
+        #courses .course .FlexContainer div {
+          width: 80%; } }
+      @media (max-width: 350px) {
+        #courses .course .FlexContainer div {
+          width: 79%; } }
+      #courses .course .FlexContainer div:hover::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 102%;
+        background: linear-gradient(-45deg, #75c7fb 0%, #ff3847 100%);
+        top: 0;
+        left: -1%;
+        z-index: -1;
+        rotate: 1deg; }
+      #courses .course .FlexContainer div .img {
+        height: 65%;
         width: 100%;
-        font-size: 1.8rem; }
-        #courses .course .FlexContainer div .detail .rating span {
-          color: #84ccfa;
-          letter-spacing: 0.1rem; }
-      #courses .course .FlexContainer div .detail p {
-        color: #000;
-        font-size: 1.2rem;
-        font-weight: 600; }
+        margin: 0;
+        background-size: cover;
+        background-position: top;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.2s; }
+        @media (max-width: 1200px) {
+          #courses .course .FlexContainer div .img {
+            height: 45%; } }
+        @media (max-width: 900px) {
+          #courses .course .FlexContainer div .img {
+            height: 50%; } }
+        @media (max-width: 600px) {
+          #courses .course .FlexContainer div .img {
+            background-position: center;
+            height: 200px; } }
+        @media (max-width: 350px) {
+          #courses .course .FlexContainer div .img {
+            height: 85%; } }
+      #courses .course .FlexContainer div .detail {
+        width: 100%;
+        height: 55%;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding-left: 2rem;
+        padding-top: 1rem; }
+        #courses .course .FlexContainer div .detail h4 {
+          border-radius: 2rem;
+          padding: 1rem 2.3rem;
+          width: fit-content;
+          background-color: #000;
+          color: #fcfcfe;
+          font-size: 1.4rem;
+          font-weight: 400;
+          margin: 0; }
+          @media (max-width: 900px) {
+            #courses .course .FlexContainer div .detail h4 {
+              font-size: 1.8rem;
+              margin: 2rem 0rem; } }
+          @media (max-width: 600px) {
+            #courses .course .FlexContainer div .detail h4 {
+              font-size: 2.5rem;
+              margin: 3rem 0; } }
+          @media (max-width: 350px) {
+            #courses .course .FlexContainer div .detail h4 {
+              font-size: 3rem;
+              margin: 3rem 0; } }
+        #courses .course .FlexContainer div .detail h2 {
+          font-size: 2.6rem;
+          color: #121;
+          font-weight: 600;
+          margin: 0;
+          width: 100%; }
+          @media (max-width: 1200px) {
+            #courses .course .FlexContainer div .detail h2 {
+              font-size: 2.6rem; } }
+          @media (max-width: 900px) {
+            #courses .course .FlexContainer div .detail h2 {
+              font-size: 3rem;
+              width: 100%; } }
+          @media (max-width: 600px) {
+            #courses .course .FlexContainer div .detail h2 {
+              font-size: 4.6rem;
+              width: 70%; } }
+          @media (max-width: 350px) {
+            #courses .course .FlexContainer div .detail h2 {
+              font-size: 5rem;
+              width: 65%; } }
+        #courses .course .FlexContainer div .detail .rating {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          width: 100%;
+          font-size: 1.8rem; }
+          @media (max-width: 900px) {
+            #courses .course .FlexContainer div .detail .rating {
+              font-size: 2rem; } }
+          @media (max-width: 600px) {
+            #courses .course .FlexContainer div .detail .rating {
+              font-size: 2.9rem; } }
+          @media (max-width: 350px) {
+            #courses .course .FlexContainer div .detail .rating {
+              font-size: 3.4rem; } }
+          #courses .course .FlexContainer div .detail .rating span {
+            color: #84ccfa;
+            letter-spacing: 0.1rem; }
+            @media (max-width: 900px) {
+              #courses .course .FlexContainer div .detail .rating span {
+                font-size: 2.3rem; } }
+            @media (max-width: 600px) {
+              #courses .course .FlexContainer div .detail .rating span {
+                font-size: 3rem; } }
+            @media (max-width: 350px) {
+              #courses .course .FlexContainer div .detail .rating span {
+                font-size: 3.6rem; } }
+        #courses .course .FlexContainer div .detail p {
+          color: #000;
+          font-size: 1.5rem;
+          font-weight: 400; }
+          @media (max-width: 1200px) {
+            #courses .course .FlexContainer div .detail p {
+              font-size: 1.8rem; } }
+          @media (max-width: 900px) {
+            #courses .course .FlexContainer div .detail p {
+              font-size: 2.4rem;
+              font-weight: 400;
+              margin: 1rem; } }
+          @media (max-width: 600px) {
+            #courses .course .FlexContainer div .detail p {
+              font-size: 3rem;
+              margin: 1rem 0; } }
+          @media (max-width: 350px) {
+            #courses .course .FlexContainer div .detail p {
+              font-size: 3.5rem;
+              margin: 1rem; } }
 
 .testinomial {
   width: 100%;
@@ -1291,6 +1422,15 @@ body {
     font-weight: 600;
     color: #000000;
     margin: 1rem; }
+    @media (max-width: 900px) {
+      .testinomial > h1 {
+        font-size: 9rem; } }
+    @media (max-width: 600px) {
+      .testinomial > h1 {
+        font-size: 11rem; } }
+    @media (max-width: 350px) {
+      .testinomial > h1 {
+        font-size: 11rem; } }
   .testinomial .swiper__cnt {
     margin-top: 4rem;
     display: flex;
@@ -1302,60 +1442,79 @@ body {
     overflow-x: auto;
     position: relative;
     padding: 1rem 0.2rem; }
+    @media (max-width: 900px) {
+      .testinomial .swiper__cnt {
+        flex-wrap: wrap; } }
 
 .footer {
-  height: 100vh;
+  min-height: 70vh;
   width: 100vw;
   display: none;
   background-color: black;
-  padding-top: 1rem; }
-  .footer > h2 {
-    font-size: 4.6rem;
-    text-align: center;
-    color: #fff;
-    margin-top: 5rem;
-    font-weight: 600; }
-  .footer > p {
-    margin-top: 2rem;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    color: #fff; }
-  .footer .socials {
-    margin-top: 3rem;
-    width: 100%;
+  padding-top: 1rem;
+  align-items: center;
+  justify-content: space-between; }
+  @media (max-width: 600px) {
+    .footer {
+      flex-direction: column;
+      min-height: 45vh;
+      padding: 5rem 3rem; } }
+  .footer .topfoot {
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    padding: 2rem 0; }
-    .footer .socials i {
-      padding: 1rem;
-      font-size: 3rem;
-      cursor: pointer;
+    flex-direction: column;
+    justify-content: center; }
+    .footer .topfoot h2 {
+      font-size: 4.6rem;
+      text-align: center;
       color: #fff;
-      transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
-      border-radius: 50%;
-      border: 0.3rem solid #c8e8fc; }
-      .footer .socials i:hover {
-        background-color: #c8e8fc;
-        color: #ff1c24; }
+      margin-top: 5rem;
+      font-weight: 600; }
+    .footer .topfoot > p {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #fff; }
+    .footer .topfoot .socials {
+      margin-top: 3rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding: 2rem 0; }
+      .footer .topfoot .socials i {
+        padding: 1rem;
+        font-size: 3rem;
+        cursor: pointer;
+        color: #fff;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+        border-radius: 50%;
+        border: 0.3rem solid #c8e8fc; }
+        .footer .topfoot .socials i:hover {
+          background-color: #c8e8fc;
+          color: #ff1c24; }
   .footer .bottom {
-    width: 100%;
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0; }
     .footer .bottom .subscribe {
-      margin-top: 8rem;
       display: flex;
       flex-direction: column;
       background: #606c88;
       background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
       background: linear-gradient(to right, #3f4c6b, #606c88);
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 29%; }
+      padding: 2.3rem;
+      border-radius: 1.2rem;
+      max-width: 50%; }
+      @media (max-width: 600px) {
+        .footer .bottom .subscribe {
+          max-width: 100%; } }
     .footer .bottom .title {
       font-size: 3rem;
       line-height: 1;

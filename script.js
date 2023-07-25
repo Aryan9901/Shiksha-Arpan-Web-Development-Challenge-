@@ -5,7 +5,7 @@ const functinality = () => {
 		const footer = document.querySelector(".footer");
 		const nav = this.document.querySelector(".nav");
 		main.style.display = "block";
-		footer.style.display = "block";
+		footer.style.display = "flex";
 		nav.style.display = "flex";
 		loader.style.display = "none";
 	});

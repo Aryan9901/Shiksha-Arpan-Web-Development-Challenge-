@@ -10,6 +10,15 @@
 		color: #000000;
 		// margin-top: 8rem;
 		margin: 1rem;
+		@include respond(tab-port) {
+			font-size: 9rem;
+		}
+		@include respond(phone) {
+			font-size: 11rem;
+		}
+		@include respond(small-phone) {
+			font-size: 11rem;
+		}
 	}
 	.swiper__cnt {
 		margin-top: 4rem;
@@ -24,5 +33,12 @@
 		overflow-x: auto;
 		position: relative;
 		padding: 1rem 0.2rem;
+		@include respond(tab-port) {
+			flex-wrap: wrap;
+		}
+		@include respond(phone) {
+		}
+		@include respond(small-phone) {
+		}
 	}
 }
