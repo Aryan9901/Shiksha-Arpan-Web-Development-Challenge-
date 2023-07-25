@@ -1,4 +1,5 @@
 // login button
+
 .btn {
 	// width: 140px;
 	// height: 50px;
@@ -102,11 +103,11 @@
 	stroke-dasharray: 12 63;
 }
 
-.hamburger input:checked + svg {
-	transform: rotate(-45deg);
-}
+// .hamburger input:checked + svg {
+// 	transform: rotate(-45deg);
+// }
 
-.hamburger input:checked + svg .line-top-bottom {
-	stroke-dasharray: 20 300;
-	stroke-dashoffset: -32.42;
-}
+// .hamburger input:checked + svg .line-top-bottom {
+// 	stroke-dasharray: 20 300;
+// 	stroke-dashoffset: -32.42;
+// }

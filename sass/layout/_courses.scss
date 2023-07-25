@@ -8,18 +8,49 @@
 		font-size: 7rem;
 		font-weight: 200;
 		line-height: 1;
+		@include respond(tab-land) {
+			font-size: 9rem;
+			font-weight: 400;
+		}
+		@include respond(tab-port) {
+			font-size: 10rem;
+			font-weight: 400;
+		}
+		@include respond(phone) {
+			font-size: 12rem;
+			font-weight: 500;
+		}
+		@include respond(small-phone) {
+			font-size: 15rem;
+		}
 		& span {
 			font-weight: 400;
 			color: transparent;
 			-webkit-text-stroke: 0.2rem #ff3847;
 			display: block;
 			color: #75c7fb;
+			@include respond(tab-land) {
+				font-size: 9rem;
+				font-weight: 700;
+			}
+			@include respond(tab-port) {
+				font-size: 10rem;
+				font-weight: 700;
+			}
+			@include respond(phone) {
+				font-size: 12rem;
+				font-weight: 700;
+			}
+			@include respond(small-phone) {
+				font-size: 15rem;
+				font-weight: 700;
+			}
 		}
 	}
 	&__container {
 		// background-color: blue;
 		display: flex;
-		height: 400vh;
+		min-height: 100vh;
 		width: 100%;
 		padding: 2rem;
 		justify-content: center;
@@ -40,9 +71,22 @@
 		// padding-left: 12rem;
 		height: 100vh;
 		width: 100%;
+		padding: 6rem 0;
 		// background-color: blue;
-		@include flex(left, center, column, 9rem);
+		@include flex(left, center, column, 4rem);
 		border-block-start: 0.3rem solid #ff919191;
+		@include respond(tab-land) {
+			height: 60vh;
+		}
+		@include respond(tab-port) {
+			height: 50vh;
+		}
+		@include respond(phone) {
+			height: 35vh;
+		}
+		@include respond(small-phone) {
+			height: 26vh;
+		}
 		h3 {
 			font-weight: 400;
 			font-size: 2.5rem;
@@ -71,6 +115,18 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@include respond(tab-land) {
+			height: 60vh;
+		}
+		@include respond(tab-port) {
+			height: 50vh;
+		}
+		@include respond(phone) {
+			height: 35vh;
+		}
+		@include respond(small-phone) {
+			height: 26vh;
+		}
 		&__container {
 			height: 70%;
 			width: 85%;
@@ -82,6 +138,18 @@
 			justify-content: center;
 			img {
 				width: 100%;
+				@include respond(tab-land) {
+				}
+				@include respond(tab-port) {
+				}
+				@include respond(phone) {
+					height: 100%;
+					// width: auto;
+				}
+				@include respond(small-phone) {
+					height: 100%;
+					// max-width: 20%;
+				}
 			}
 		}
 	}

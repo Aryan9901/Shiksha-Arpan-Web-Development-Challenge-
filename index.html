@@ -9,7 +9,7 @@
      <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="body">
      <div class="loader">
      </div>
      <div id="chatbotcnt">
@@ -85,6 +85,16 @@
                <p id="not" class="signin">Already have an acount ? <a id="not" href="#">Signin</a> </p>
           </form>
      </div>
+     <div id="navanim">
+          <i id="navClose" class="fa-solid fa-xmark"></i>
+          <a href="#">Home</a>
+          <a href="#">Courses</a>
+          <a href="#">Girls who code</a>
+          <a href="#">Forums</a>
+          <a href="#">Blogs</a>
+          <a href="#">Contact Us</a>
+     </div>
+     <div id="navScreen"></div>
      <nav class="nav">
           <div class="nav__logo">
                <img src="./assets/logo1.png" alt="brand icon" class="nav__img">
@@ -109,7 +119,7 @@
                <p>Courses &nbsp;&nbsp;<i class="ri-arrow-down-s-line"></i></p>
           </button>
           <div class="nav__btn__container">
-               <button class="btn login">
+               <button id="hidden" class="btn login">
                     <span class="btn-text-one">Log In</span>
                     <span class="btn-text-two">Log In Here</span>
                </button>

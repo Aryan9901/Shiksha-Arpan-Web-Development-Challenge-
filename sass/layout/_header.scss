@@ -10,7 +10,7 @@
 		// background-color: #fff9d0;
 		background-color: #c8e8fc;
 		position: absolute;
-		top: 5%;
+		top: 2.3%;
 		right: 10%;
 		text-align: center;
 		width: 20%;
@@ -31,12 +31,29 @@
 		// background-color: aqua;
 		text-align: left;
 		padding-bottom: 6rem;
+		white-space: wrap;
+		line-height: 1;
 		& p {
 			font-size: 2.5rem;
 			font-weight: 400;
 			letter-spacing: 0.2rem;
 			opacity: 0.8;
 			overflow: hidden;
+			margin-bottom: 1rem;
+			@include respond(tab-port) {
+				font-size: 3rem;
+				display: block;
+				margin-bottom: 4rem;
+			}
+			@include respond(phone) {
+			}
+			@include respond(small-phone) {
+			}
+			@include respond(big-desktop) {
+			}
+			&:not(:last-child) {
+				margin-right: 3rem;
+			}
 		}
 		& h1 {
 			font-weight: 900;
@@ -45,7 +62,18 @@
 			letter-spacing: 0.5rem;
 			color: transparent;
 			overflow: hidden;
+
 			& span {
+				@include respond(tab-port) {
+					font-size: 15rem;
+					display: block;
+				}
+				@include respond(phone) {
+					font-size: 10rem;
+				}
+				@include respond(small-phone) {
+					font-size: 15rem;
+				}
 				&:not(:last-child) {
 					margin-right: 3rem;
 				}
@@ -57,7 +85,7 @@
 		font-weight: 400;
 		letter-spacing: 0.2rem;
 		width: 72%;
-		// opacity: 0.3;
+		opacity: 1;
 		margin-top: 2rem;
 		color: #75c7fb;
 	}

@@ -1,12 +1,20 @@
 .marquecards {
 	display: flex;
 	align-items: center;
-	gap: 5rem;
-	// width: 100%;
+	gap: 8rem;
+	width: 100%;
 	// background-color: red;
 	overflow-y: hidden;
 	overflow-x: auto;
 	padding: 2rem;
+	@include respond(tab-port) {
+		gap: 6rem;
+	}
+	@include respond(phone) {
+		gap: 9rem;
+	}
+	@include respond(small-phone) {
+	}
 	&::-webkit-scrollbar {
 		display: none;
 	}

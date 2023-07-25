@@ -62,24 +62,6 @@ tl.from(".main__heading p", {
 // 	},
 // });
 
-gsap.utils.toArray(".courses__details").forEach((element) => {
-	gsap.to(element, {
-		gap: "3rem",
-		duration: 4,
-		delay: 1,
-		ease: "expo.inOut",
-		scrollTrigger: {
-			trigger: element,
-			scroller: "body",
-			start: "top center", // Adjust the start and end values to control when the animation starts and ends
-			end: "+=30", // Adjust the start and end values to control when the animation starts and ends
-			// scrollerStart: "top bottom",
-			// markers: true,
-			scrub: 2,
-		},
-	});
-});
-
 // image scroll
 
 // gsap.to(".courses__img", {

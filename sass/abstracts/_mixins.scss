@@ -5,5 +5,43 @@
 	flex-direction: $direction;
 	gap: $gap;
 }
-@mixin toodle {
+
+// breakpoint argument choices
+//  phone   -  0 - 600px
+// tab-port -  600 - 900px
+// tab-land -  900px - 1200px
+// our normal style -  1200 - 1800px
+// 1800+  big desktop
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == small-phone {
+		@media (max-width: 350px) {
+			// 600px
+			@content;
+		}
+	}
+	@if $breakpoint == phone {
+		@media (max-width: 600px) {
+			// 600px
+			@content;
+		}
+	}
+	@if $breakpoint == tab-port {
+		//  900px
+		@media (max-width: 900px) {
+			@content;
+		}
+	}
+	@if $breakpoint == tab-land {
+		//  1200px
+		@media (max-width: 1200px) {
+			@content;
+		}
+	}
+	@if $breakpoint == big-desktop {
+		//    1800px
+		@media (min-width: 1800px) {
+			@content;
+		}
+	}
 }

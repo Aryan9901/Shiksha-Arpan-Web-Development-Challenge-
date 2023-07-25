@@ -3,7 +3,7 @@
 		position: relative;
 		min-width: 400px;
 		height: 200px;
-		background: linear-gradient(-45deg, #75c7fb 0%, #ff3847 100%);
+		// background: linear-gradient(-45deg, #75c7fb 0%, #ff3847 100%);
 		border-radius: 10px;
 		display: flex;
 		align-items: center;
@@ -11,6 +11,15 @@
 		overflow: hidden;
 		transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 		object-fit: cover;
+		@include respond(tab-port) {
+			min-width: 350px;
+		}
+		@include respond(phone) {
+			min-width: 322px;
+		}
+		@include respond(small-phone) {
+			min-width: 200px;
+		}
 	}
 	.card1 img {
 		width: 100%;

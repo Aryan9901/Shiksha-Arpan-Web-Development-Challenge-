@@ -1,42 +1,5 @@
-* {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
-	// font-family: Gilroy;
-}
-* p {
-	font-family: "Nunito", sans-serif;
-}
-* h1,
-* h2,
-* h3,
-* h4,
-* h5 {
-	font-family: "Roboto Condensed", sans-serif;
-}
-*::selection {
-	background-color: #75c7fb;
-	color: #fe4c59;
-	font-weight: 600;
-}
-
-html {
-	height: 100%;
-	width: 100%;
-	font-size: 52.5%;
-}
-
-body {
-	height: 100%;
-	width: 100%;
-	overflow-x: hidden;
-}
-
-// font
-
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Nunito:ital,wght@0,200;0,300;0,400;1,200&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
-
 // importing base folder
+@import "abstracts/mixins";
 @import "base/base";
 @import "base/typography";
 @import "base/animation";
@@ -44,7 +7,6 @@ body {
 
 // abstract folder
 @import "abstracts/function";
-@import "abstracts/mixins";
 @import "abstracts/variables";
 
 // components
@@ -57,6 +19,7 @@ body {
 @import "components/card1";
 @import "components/swiper";
 @import "components/quotes";
+@import "components/navOpen";
 // layout
 @import "layout/header";
 @import "layout/courses";
