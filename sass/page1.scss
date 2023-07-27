@@ -1,0 +1,16 @@
+// importing base folder
+@import "abstracts/mixins";
+@import "base/base";
+@import "base/animation";
+@import "base/utilities";
+
+// abstract folder
+
+// components
+@import "components/loader";
+@import "pages/forum/nav";
+@import "pages/forum/header";
+@import "pages/forum/disscussion";
+@import "pages/forum/categories";
+// layout
+@import "layout/footer";

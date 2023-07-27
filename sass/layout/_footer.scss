@@ -1,22 +1,18 @@
 .footer {
-	min-height: 70vh;
+	// min-height: 70vh;
 	width: 100vw;
 	display: none;
 	background-color: black;
 	padding-top: 1rem;
+	padding: 2rem 1rem;
 	align-items: center;
 	justify-content: space-between;
-	@include respond(tab-land) {
-	}
-	@include respond(tab-port) {
-	}
 	@include respond(phone) {
 		flex-direction: column;
-		min-height: 45vh;
+		// min-height: 45vh;
 		padding: 5rem 3rem;
 	}
-	@include respond(small-phone) {
-	}
+
 	& .topfoot {
 		width: 50%;
 		display: flex;
@@ -24,6 +20,14 @@
 		flex-direction: column;
 		justify-content: center;
 		// background-color: red;
+		@include respond(phone) {
+			width: 100%;
+			margin-bottom: 9rem;
+		}
+		@include respond(small-phone) {
+			width: 100%;
+			margin-bottom: 10rem;
+		}
 		h2 {
 			font-size: 4.6rem;
 			text-align: center;
@@ -69,6 +73,12 @@
 		align-items: center;
 		justify-content: center;
 		padding: 0;
+		@include respond(phone) {
+			width: 70%;
+		}
+		@include respond(small-phone) {
+			width: 70%;
+		}
 		// background-color: red;
 		.subscribe {
 			// margin-top: 8rem;

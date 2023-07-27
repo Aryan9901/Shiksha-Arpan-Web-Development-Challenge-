@@ -3,6 +3,7 @@
 	padding: 0px;
 	box-sizing: border-box;
 	// font-family: Gilroy;
+	scroll-behavior: smooth;
 }
 * p {
 	font-family: "Nunito", sans-serif;
@@ -12,7 +13,7 @@
 * h3,
 * h4,
 * h5 {
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: "Quicksand", "Roboto Condensed", sans-serif;
 }
 *::selection {
 	background-color: #75c7fb;
@@ -24,6 +25,7 @@ html {
 	height: 100%;
 	width: 100%;
 	font-size: 52.5%; // 1 rem = 8.4px
+	scroll-behavior: smooth;
 	@include respond(tab-land) {
 		font-size: 42.5%;
 	}
@@ -45,8 +47,9 @@ body {
 	height: 100%;
 	width: 100%;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 // font
-
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Nunito:ital,wght@0,200;0,300;0,400;1,200&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");

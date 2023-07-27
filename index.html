@@ -9,7 +9,7 @@
      <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="body">
+<body data-barba="wrapper" class="body">
      <div class="loader">
      </div>
      <div id="chatbotcnt">
@@ -137,7 +137,7 @@
                </label>
           </div>
      </nav>
-     <main class="main">
+     <main data-barba="container" data-barba-namespace="index" class="main">
           <header class="main__hero">
                <div class="toodle">
                     <p>All courses come with subtitles and certificates</p>
@@ -207,7 +207,8 @@
                     <i class="ri-menu-line"></i>
                </div>
                <p class="categories">Categories <i class="ri-arrow-down-s-line"></i></p>
-               <p class="forums">Forums <i class="ri-external-link-line"></i></p>
+               <p class="forums">Forums <a href="forum.html"><i id="navigateForum"
+                              class="ri-external-link-line"></i></a></p>
                <i id="chatbot" class="fa-brands fa-rocketchat"></i>
           </aside>
           <section class="marquecards">
@@ -460,6 +461,7 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"></script>
      <script src="animation.js"></script>
      <script src="script.js"></script>
+     <script src="navigate.js"></script>
 </body>
 
 </html>
