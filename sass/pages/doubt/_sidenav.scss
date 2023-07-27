@@ -1,0 +1,109 @@
+#doubt__menu {
+	position: fixed;
+	top: 0%;
+	// left: 19%;
+	left: 0%;
+	font-size: 4rem;
+	color: #000;
+	z-index: 999;
+	cursor: pointer;
+	background-color: #ff384975;
+	padding: 3rem;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+.sideNav {
+	// width: 23%;
+	width: 0%;
+	height: 100vh;
+	background-color: #f0e9e9;
+	position: fixed;
+	top: 0;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+	left: 0;
+	// padding: 1rem 2rem;
+	padding: 0;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
+	// justify-content: space-around;
+	// row-gap: 4rem;
+	& > h1 {
+		display: none;
+		font-size: 5rem;
+		margin: 3rem 2rem;
+		transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+	}
+
+	.search {
+		width: 100%;
+		text-align: center;
+		margin-top: 1rem;
+		display: none;
+		align-items: center;
+		justify-content: center;
+		transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+		// gap: 0.1rem;
+		input {
+			width: 70%;
+			font-weight: 500;
+			padding: 1rem 1rem;
+			font-size: 1.5rem;
+			outline: none;
+			border-radius: none;
+			background-color: transparent;
+			border: 0.2rem solid #000;
+		}
+		span {
+			padding: 1.03rem;
+			background-color: #000;
+			color: #fff;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			i {
+				height: 100%;
+				font-size: 2rem;
+			}
+		}
+	}
+	.row {
+		margin-top: 2rem;
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		row-gap: 1rem;
+		display: none;
+		flex-direction: column;
+		transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+		padding-left: 3rem;
+		label {
+			font-size: 1.7rem;
+			font-family: "quicksand";
+			font-weight: 600;
+		}
+		select {
+			padding: 1rem 2.5rem;
+			padding-left: 0.3rem;
+			background-color: transparent;
+			outline: none;
+			border: 0.2rem solid #000;
+			font-size: 1.5rem;
+		}
+		option {
+			background-color: #fcfcfc;
+		}
+	}
+	button {
+		margin-top: 3rem;
+		display: none;
+		margin-left: 3rem;
+		padding: 1rem 2rem;
+		transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+		background-color: #ff3847;
+		outline: none;
+		border: 0.2rem solid #000;
+		border-radius: 0.7rem;
+		width: 80%;
+	}
+}

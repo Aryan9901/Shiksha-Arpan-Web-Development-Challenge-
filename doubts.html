@@ -5,10 +5,55 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Ask a Doubt</title>
+     <link rel="stylesheet" href="./css/doubt.css">
 </head>
 
 <body>
+     <i id="doubt__menu" class="fa-solid fa-bars"></i>
+     <div class="loader">
+     </div>
+     <div class="forum__nav">
+          <img src="./assets/Banner.png" alt="logo 2">
+          <div class="links">
+               <a href="index.html">Home</a>
+               <a href="#forums">Explore</a>
+               <a href="forum.html"><span>View Forums</span></a>
+               <i class="fa-solid fa-user"></i>
+          </div>
+     </div>
+     <div class="sideNav">
+          <h1>Ask Your Doubt</h1>
+          <div class="search">
+               <input type="text" placeholder="Search for the answer">
+               <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          <div class="row">
+               <label for="filter">
+                    Filter:
+               </label>
+               <select name="filter" id="filter" class="filter" value="">
+                    <option value="user-followed">Questions I am Following</option>
+                    <option value="user-asked">Questions I asked</option>
+                    <option value="no-response">Questions without response</option>
+               </select>
+          </div>
+          <div class="row">
+               <label for="sort">
+                    Sort by Recommended:
+               </label>
+               <select name="sort" id="sort" class="sort" value="">
+                    <option value="user-followed">Sort by most recent</option>
+                    <option value="user-asked">Sort by oldest</option>
+                    <option value="no-response">Sort by most popular</option>
+               </select>
+          </div>
+          <button>Add a Question</button>
+     </div>
+     <main class="doubt">
 
+     </main>
+     <script src="https://kit.fontawesome.com/350acc314a.js" crossorigin="anonymous"></script>
+     <script src="script2.js"></script>
 </body>
 
 </html>

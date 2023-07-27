@@ -1,0 +1,10 @@
+// importing base folder
+@import "abstracts/mixins";
+@import "base/base";
+@import "base/animation";
+@import "base/utilities";
+@import "pages/doubt/header";
+@import "pages/doubt/sidenav";
+@import "pages/forum/nav";
+// layout
+@import "layout/footer";
