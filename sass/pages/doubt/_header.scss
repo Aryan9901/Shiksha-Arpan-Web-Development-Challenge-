@@ -1,5 +1,265 @@
 .doubt {
 	height: 100vh;
 	width: 100%;
-	background-color: red;
+	display: flex;
+	// background-color: red;
+	.ask__question {
+		width: 21%;
+		height: 100%;
+		background-color: rgb(229, 229, 229);
+		padding-top: 2rem;
+		// padding-left: 1rem;
+		& > h2 {
+			font-size: 2.3rem;
+			background-color: #c7ddde;
+			width: 100%;
+			text-align: center;
+			margin-bottom: 2rem;
+			padding: 1rem 2rem;
+			i {
+				margin-right: 1rem;
+			}
+		}
+		& > .label {
+			font-size: 2rem;
+			font-weight: 500;
+			margin-left: 1rem;
+			margin-top: 3rem;
+			font-family: "quicksand";
+		}
+		.options {
+			display: flex;
+			background-color: transparent;
+			border: 0.2rem solid #000;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 2rem;
+			width: 78%;
+			// width: fit-content;
+			cursor: pointer;
+			margin-left: 3rem;
+			margin-top: 2rem;
+			padding: 1rem 2rem;
+			input {
+				padding: 4rem;
+			}
+			p {
+				font-size: 2rem;
+				font-weight: 600;
+			}
+		}
+
+		& > h3 {
+			margin-top: 2rem;
+			// margin-bottom: 2rem;
+			// margin-left: 1rem;
+			font-size: 2rem;
+			background-color: #c7ddde;
+			padding: 1rem 2rem;
+			text-align: center;
+		}
+		.instruct__container {
+			// background-color: #fff;
+			width: 100%;
+			// height: 30%;
+			padding: 1rem 1rem;
+			padding-left: 2rem;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+			row-gap: 1rem;
+			.instruct {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				background-color: transparent;
+				border: 0.2rem solid #000;
+				padding: 1rem;
+				gap: 2rem;
+				width: 99%;
+				cursor: pointer;
+				.dp {
+					// background-color: yellow;
+					border-radius: 50%;
+					height: 5rem;
+					width: 9rem;
+					object-fit: cover;
+					object-position: center;
+					img {
+						width: 100%;
+						height: 100%;
+						border-radius: 50%;
+					}
+				}
+				.text {
+					h3 {
+						font-size: 1.7rem;
+					}
+					p {
+						font-size: 1.2rem;
+					}
+				}
+			}
+			.active {
+				background-color: #ff3847;
+			}
+		}
+	}
+	.chat__container {
+		width: 80%;
+		height: 100%;
+		// background-color: red;
+		padding: 1rem 0rem;
+		padding-top: 2rem;
+		.conatiner__user {
+			padding: 0 3rem;
+			width: 100%;
+			height: 40%;
+			// background-color: blue;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 2rem;
+			.profile {
+				height: 100%;
+				width: 10%;
+				// background-color: cyan;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				padding-top: 1rem;
+				.dp {
+					height: 10rem;
+					width: 9rem;
+					border-radius: 50%;
+					background-color: gray;
+					object-fit: cover;
+					object-position: center;
+					img {
+						width: 100%;
+						height: 100%;
+						border-radius: 50%;
+					}
+				}
+				.line {
+					width: 1%;
+					height: 100%;
+					background-color: #010;
+				}
+			}
+			.details {
+				height: 100%;
+				width: 100%;
+				// background-color: salmon;
+				.intro {
+					width: 100%;
+					padding: 0 2rem;
+					h2 {
+						font-size: 2rem;
+						color: #444;
+					}
+					h4 {
+						margin-top: 1rem;
+						font-size: 2.7rem;
+						color: #444;
+						opacity: 0.8;
+					}
+				}
+				.question {
+					margin-top: 3rem;
+					width: 100%;
+					padding: 0 2rem;
+					p {
+						font-size: 1.7rem;
+						color: #777;
+					}
+					.para1 {
+						letter-spacing: 0.1rem;
+					}
+					.para2 {
+						margin-top: 2rem;
+						letter-spacing: 0.1rem;
+						margin-bottom: 3rem;
+					}
+				}
+			}
+		}
+		.container__tutor {
+			// height: 30%;
+			width: 90%;
+			background-color: #bbb5b5;
+			padding: 1rem 3rem;
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+			gap: 5rem;
+			.dpp {
+				height: 9rem;
+				width: 12rem;
+				background-color: yellow;
+				border-radius: 50%;
+				object-fit: cover;
+				object-position: center;
+				img {
+					height: 100%;
+					width: 100%;
+					border-radius: 50%;
+				}
+			}
+			.details {
+				h3 {
+					font-size: 2.6rem;
+					color: #555;
+				}
+				p {
+					margin-top: 1rem;
+					font-size: 1.8rem;
+					font-weight: 400;
+					color: #555;
+				}
+			}
+		}
+		.answer {
+			height: 40%;
+			width: 100%;
+			// background-color: red;
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+			padding: 2rem 0;
+			gap: 3rem;
+			.dp1 {
+				margin: 3rem;
+				height: 9rem;
+				width: 9rem;
+				border-radius: 50%;
+				img {
+					height: 100%;
+					width: 100%;
+					border-radius: 50%;
+				}
+			}
+			.container {
+				width: 100%;
+				height: 100%;
+				// background-color: red;
+				h2 {
+					font-size: 2.7rem;
+				}
+				textarea {
+					width: 90%;
+					border-radius: 1rem;
+					height: 80%;
+					resize: none;
+					background-color: transparent;
+					border: 0.2rem solid cyan;
+					padding: 2rem;
+					font-size: 2rem;
+					outline: none;
+				}
+			}
+		}
+	}
 }
