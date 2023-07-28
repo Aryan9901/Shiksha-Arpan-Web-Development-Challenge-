@@ -5,17 +5,37 @@
 	// background-color: red;
 	.ask__question {
 		width: 21%;
-		height: 100%;
+		height: 180vh;
 		background-color: rgb(229, 229, 229);
 		padding-top: 2rem;
 		// padding-left: 1rem;
+		@include respond(tab-port) {
+			width: 24%;
+		}
+		@include respond(phone) {
+			width: 25%;
+			height: 97vh;
+		}
+		@include respond(small-phone) {
+			width: 26%;
+			height: 96vh;
+		}
 		& > h2 {
-			font-size: 2.3rem;
+			font-size: 3.4rem;
 			background-color: #c7ddde;
 			width: 100%;
 			text-align: center;
 			margin-bottom: 2rem;
 			padding: 1rem 2rem;
+			@include respond(tab-port) {
+				font-size: 3rem;
+			}
+			@include respond(phone) {
+				font-size: 3rem;
+			}
+			@include respond(small-phone) {
+				font-size: 3.5rem;
+			}
 			i {
 				margin-right: 1rem;
 			}
@@ -26,6 +46,20 @@
 			margin-left: 1rem;
 			margin-top: 3rem;
 			font-family: "quicksand";
+			@include respond(tab-port) {
+				font-size: 2.5rem;
+			}
+			@include respond(phone) {
+				font-size: 2rem;
+				font-weight: 700;
+				text-align: center;
+				margin-left: 1rem;
+			}
+			@include respond(small-phone) {
+				text-align: center;
+				font-size: 2rem;
+				font-weight: 700;
+			}
 		}
 		.options {
 			display: flex;
@@ -40,12 +74,39 @@
 			margin-left: 3rem;
 			margin-top: 2rem;
 			padding: 1rem 2rem;
+			@include respond(tab-port) {
+				gap: 1rem;
+				padding: 1rem 1.5rem;
+				margin-left: 2rem;
+				width: 80%;
+				margin-top: 3rem;
+				padding-right: 4rem;
+			}
+			@include respond(phone) {
+				gap: 1rem;
+				padding: 1rem 1.5rem;
+				padding-right: 3rem;
+				width: 88%;
+			}
+			@include respond(small-phone) {
+				gap: 1rem;
+				width: 90%;
+			}
 			input {
 				padding: 4rem;
+				@include respond(phone) {
+					padding: 1rem;
+				}
+				@include respond(small-phone) {
+					padding: 1rem;
+				}
 			}
 			p {
 				font-size: 2rem;
 				font-weight: 600;
+				@include respond(small-phone) {
+					font-size: 1.8rem;
+				}
 			}
 		}
 
@@ -69,6 +130,12 @@
 			align-items: flex-start;
 			justify-content: flex-start;
 			row-gap: 1rem;
+			@include respond(phone) {
+				row-gap: 6rem;
+			}
+			@include respond(small-phone) {
+				row-gap: 7rem;
+			}
 			.instruct {
 				display: flex;
 				align-items: center;
@@ -79,6 +146,13 @@
 				gap: 2rem;
 				width: 99%;
 				cursor: pointer;
+				@include respond(phone) {
+					margin-top: 3rem;
+				}
+				@include respond(small-phone) {
+					margin-top: 2rem;
+				}
+
 				.dp {
 					// background-color: yellow;
 					border-radius: 50%;
@@ -108,19 +182,40 @@
 	}
 	.chat__container {
 		width: 80%;
-		height: 100%;
+		// height: 100%;
 		// background-color: red;
 		padding: 1rem 0rem;
 		padding-top: 2rem;
+		@include respond(tab-port) {
+			padding-top: 3rem;
+		}
+		@include respond(phone) {
+			padding-top: 3rem;
+		}
+		@include respond(small-phone) {
+			padding-top: 3rem;
+		}
 		.conatiner__user {
-			padding: 0 3rem;
+			padding: 4rem 3rem;
 			width: 100%;
 			height: 40%;
 			// background-color: blue;
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
-			gap: 2rem;
+			gap: 1.5rem;
+			padding-bottom: 4rem;
+			margin-bottom: 3rem;
+			@include respond(tab-port) {
+				height: fit-content;
+				padding-bottom: 4rem;
+				padding-top: 4rem;
+				align-items: flex-start;
+			}
+			@include respond(phone) {
+			}
+			@include respond(small-phone) {
+			}
 			.profile {
 				height: 100%;
 				width: 10%;
@@ -130,6 +225,13 @@
 				align-items: center;
 				justify-content: flex-start;
 				padding-top: 1rem;
+				@include respond(tab-port) {
+					align-items: flex-start;
+				}
+				@include respond(phone) {
+				}
+				@include respond(small-phone) {
+				}
 				.dp {
 					height: 10rem;
 					width: 9rem;

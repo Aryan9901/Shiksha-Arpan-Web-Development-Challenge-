@@ -90,10 +90,6 @@
 			padding: 2.3rem;
 			border-radius: 1.2rem;
 			max-width: 50%;
-			@include respond(tab-land) {
-			}
-			@include respond(tab-port) {
-			}
 			@include respond(phone) {
 				max-width: 100%;
 			}

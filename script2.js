@@ -31,7 +31,7 @@ const openSideNav = () => {
 			menuIcon.style.top = "5%";
 			menuIcon.style.padding = "0";
 			menuIcon.style.backgroundColor = "transparent";
-			sideNav.style.width = "23%";
+			sideNav.style.width = "26%";
 			h1.style.display = "block";
 			search.style.display = "flex";
 			rows.forEach((elem) => {
