@@ -40,9 +40,10 @@
 - **Responsive Design**: Ensure that the tutor matching feature is accessible and easy to use across all devices.
 
 ## Key Features
+- **Educational Focus**: The platform is designed for sharing knowledge and solving doubts in various academic and technical fields.
+- **Interactive Discussions**: Users can engage in discussions, ask questions, and provide answers, fostering a collaborative learning environment.
+- **Expert Assistance**: Instructors are available to provide expert guidance on specific topics.
 - **Captivating Visual Design**: Utilized modern design principles to create a visually appealing interface that attracts and retains users.
-- **Intuitive Navigation**: Structured the interface to ensure users can effortlessly navigate through the community forums and tutor matching sections.
-- **Interactive Elements**: Included call-to-action buttons, easy-to-navigate categories, and interactive components to boost user engagement.
 - **Responsive Design**: Ensured the design is fully responsive, providing an optimal user experience across various devices and screen sizes.
 
 ## Results
