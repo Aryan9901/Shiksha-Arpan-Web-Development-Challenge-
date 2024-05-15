@@ -10,7 +10,7 @@
  visually appealing, and user-friendly experience to engage and retain users.
 
 ## Preview
-![Shiksha Arpan Platform Preview](path-to-your-image-file.jpg)
+![Shiksha Arpan Platform Preview](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111636.png)
 
 ## Table of Contents
 - [Project Objectives](#project-objectives)
