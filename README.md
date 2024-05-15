@@ -87,4 +87,4 @@ To clone and run this project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/shiksha-arpan-platform.git
+  [ git clone https://github.com/your-username/shiksha-arpan-platform.git](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-.git)
