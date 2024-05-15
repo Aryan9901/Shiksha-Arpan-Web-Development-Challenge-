@@ -14,6 +14,7 @@
 
 ## Table of Contents
 - [Project Objectives](#project-objectives)
+- [Screenshots](#screenshots)
 - [Feature 1: Community Discussion Forum](#feature-1-community-discussion-forum)
 - [Feature 2: Enhanced Tutor Matching Algorithm](#feature-2-enhanced-tutor-matching-algorithm)
 - [Key Features](#key-features)
@@ -28,6 +29,16 @@
 - **Create an Intuitive and Immersive User Experience**: Design a user-friendly interface that encourages exploration and utilization of the platform's functionalities.
 - **Promote Key Functionalities**: Focus on prominently featuring the "Ask Doubts" functionality and other key features, highlighting the platform's benefits.
 - **Develop Two Essential Features**: Design and develop the UI for the Community Discussion Forum and the Enhanced Tutor Matching Algorithm.
+
+## Screenshots
+Here are some screenshots of the Shiksha Arpan Platform:
+
+![Screenshot 1](placeholder1.jpg)
+![Screenshot 2](placeholder2.jpg)
+![Screenshot 3](placeholder3.jpg)
+![Screenshot 4](placeholder4.jpg)
+![Screenshot 5](placeholder5.jpg)
+
 
 ## Feature 1: Community Discussion Forum
 - **Interactive Discussion Threads**: Users can start new discussions or join existing ones, fostering a collaborative learning environment.
