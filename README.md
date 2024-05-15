@@ -33,11 +33,11 @@
 ## Screenshots
 Here are some screenshots of the Shiksha Arpan Platform:
 
-![Screenshot 1](placeholder1.jpg)
-![Screenshot 2](placeholder2.jpg)
-![Screenshot 3](placeholder3.jpg)
-![Screenshot 4](placeholder4.jpg)
-![Screenshot 5](placeholder5.jpg)
+![Screenshot 1](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111636.png)
+![Screenshot 2](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111636.png)
+![Screenshot 3](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111636.png)
+![Screenshot 4](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111636.png)
+![Screenshot 5]([placeholder5.jpg](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111636.png))
 
 
 ## Feature 1: Community Discussion Forum
