@@ -22,7 +22,6 @@
 - [Conclusion](#conclusion)
 - [Technologies Used](#technologies-used)
 - [How to Clone and Run the Project](#how-to-clone-and-run-the-project)
-- [View Project](#view-project)
 - [Demo](#demo)
 
 ## Project Objectives
@@ -33,10 +32,11 @@
 ## Screenshots
 Here are some screenshots of the Shiksha Arpan Platform:
 
-![Screenshot 1](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111636.png)
-![Screenshot 2](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111706.png)
-![Screenshot 3](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111722.png)
+![Screenshot 1](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111636.png)<br>
+![Screenshot 2](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111706.png)<br>
+![Screenshot 3](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111722.png)<br>
 ![Screenshot 4](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111733.png)
+
 
 
 ## Feature 1: Community Discussion Forum
