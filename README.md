@@ -14,10 +14,10 @@
 
 ## Table of Contents
 - [Project Objectives](#project-objectives)
-- [Screenshots](#screenshots)
 - [Feature 1: Community Discussion Forum](#feature-1-community-discussion-forum)
 - [Feature 2: Enhanced Tutor Matching Algorithm](#feature-2-enhanced-tutor-matching-algorithm)
 - [Key Features](#key-features)
+- [Screenshots](#screenshots)
 - [Results](#results)
 - [Conclusion](#conclusion)
 - [Technologies Used](#technologies-used)
@@ -29,7 +29,24 @@
 - **Promote Key Functionalities**: Focus on prominently featuring the "Ask Doubts" functionality and other key features, highlighting the platform's benefits.
 - **Develop Two Essential Features**: Design and develop the UI for the Community Discussion Forum and the Enhanced Tutor Matching Algorithm.
 
-## Screenshots
+## Feature 1: Community Discussion Forum
+- **Interactive Discussion Threads**: Users can start new discussions or join existing ones, fostering a collaborative learning environment.
+- **Category Navigation**: Easy access to various categories such as Amazon AWS, React, Mathematics, Physics, and more, allowing users to find relevant topics quickly.
+- **User Engagement**: Features like upvoting answers, tagging topics, and a visually appealing layout to enhance user participation and interaction.
+
+## Feature 2: Enhanced Tutor Matching Algorithm
+- **Personalized Tutor Selection**: Users can select tutors based on their subject needs (Mathematics, Physics, Chemistry) and availability.
+- **Detailed Tutor Profiles**: Display tutor profiles with their expertise, response time, and availability, helping users make informed decisions.
+- **Responsive Design**: Ensure that the tutor matching feature is accessible and easy to use across all devices.
+
+## Key Features
+- **Educational Focus**: The platform is designed for sharing knowledge and solving doubts in various academic and technical fields.
+- **Interactive Discussions**: Users can engage in discussions, ask questions, and provide answers, fostering a collaborative learning environment.
+- **Expert Assistance**: Instructors are available to provide expert guidance on specific topics.
+- **Captivating Visual Design**: Utilized modern design principles to create a visually appealing interface that attracts and retains users.
+- **Responsive Design**: Ensured the design is fully responsive, providing an optimal user experience across various devices and screen sizes.
+
+  ## Screenshots
 
 Here are some screenshots of the Shiksha Arpan Platform:
 
@@ -48,23 +65,6 @@ Here are some screenshots of the Shiksha Arpan Platform:
 ![Screenshot 4](https://github.com/Aryan9901/Shiksha-Arpan-Web-Development-Challenge-/blob/main/Screenshot%202024-05-15%20111733.png)
 
 
-
-## Feature 1: Community Discussion Forum
-- **Interactive Discussion Threads**: Users can start new discussions or join existing ones, fostering a collaborative learning environment.
-- **Category Navigation**: Easy access to various categories such as Amazon AWS, React, Mathematics, Physics, and more, allowing users to find relevant topics quickly.
-- **User Engagement**: Features like upvoting answers, tagging topics, and a visually appealing layout to enhance user participation and interaction.
-
-## Feature 2: Enhanced Tutor Matching Algorithm
-- **Personalized Tutor Selection**: Users can select tutors based on their subject needs (Mathematics, Physics, Chemistry) and availability.
-- **Detailed Tutor Profiles**: Display tutor profiles with their expertise, response time, and availability, helping users make informed decisions.
-- **Responsive Design**: Ensure that the tutor matching feature is accessible and easy to use across all devices.
-
-## Key Features
-- **Educational Focus**: The platform is designed for sharing knowledge and solving doubts in various academic and technical fields.
-- **Interactive Discussions**: Users can engage in discussions, ask questions, and provide answers, fostering a collaborative learning environment.
-- **Expert Assistance**: Instructors are available to provide expert guidance on specific topics.
-- **Captivating Visual Design**: Utilized modern design principles to create a visually appealing interface that attracts and retains users.
-- **Responsive Design**: Ensured the design is fully responsive, providing an optimal user experience across various devices and screen sizes.
 
 ## Results
 - **User Engagement**: The design effectively encourages users to engage with the platform's features, promoting active participation in discussions and efficient tutor matching.
