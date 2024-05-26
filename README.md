@@ -1,5 +1,10 @@
 # Shiksha Arpan Platform - UI Design and Development
 
+## Live Demo
+
+Check out the live demo [Live Demo](https://aryan9901.github.io/Shiksha-Arpan-Web-Development-Challenge-/).
+
+
 ## Overview
  Shiksha Arpan is a well-structured platform for educational discussions, enabling users to enhance their knowledge, seek 
  help from experts, and connect with others who share similar interests. The user interface seems user-friendly, with clear navigation 
